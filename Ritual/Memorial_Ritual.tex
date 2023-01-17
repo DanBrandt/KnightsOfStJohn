@@ -1,0 +1,429 @@
+\documentclass[11pt, twoside]{report}
+
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage{bbding}
+\usepackage{ragged2e}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{paracol}
+\usepackage{mdframed}
+\usepackage[margin=1in]{geometry}
+
+\usepackage[autocompile]{gregoriotex}
+
+\titleformat{\chapter}[block]{\huge\scshape\filcenter}{}{1em}{}
+\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
+
+\mdfsetup{skipabove=\topskip, skipbelow=\topskip}
+
+\newcommand{\rubric}[1]{
+	\switchcolumn[0] {
+		\itshape
+		#1
+	}
+}
+
+\newcommand{\latinenglish}[2]{
+	\switchcolumn[0]* {
+		#1
+	}
+	\switchcolumn[1] {
+		\itshape\small
+		#2
+	}
+}
+
+\newcommand{\latinenglishequal}[2]{
+	\switchcolumn[0]* {
+		#1
+	}
+	\switchcolumn[1] {
+		\itshape
+		#2
+	}
+}
+
+\newenvironment{latinenglishsection}
+	{\columnratio{.7, .3} \begin{paracol}{2}}
+	{\end{paracol}}
+
+\newenvironment{latinenglishequalsection}
+	{\columnratio{.5, .5}\begin{paracol}{2}}
+	{\end{paracol}}
+
+\setlength{\columnseprule}{0.4pt}
+
+\newcommand{\heading}[1]{
+	\begin{leftcolumn}
+		#1
+	\end{leftcolumn}
+}
+
+\newcommand{\spanning}[1]{
+	\switchcolumn*[#1]
+}
+
+\newenvironment{verses}[1]
+	{\begin{flushleft} \begin{enumerate}[leftmargin=*] \setcounter{enumi}{#1}}
+	{\end{enumerate} \end{flushleft}}
+
+\newenvironment{versicles}{\par\leavevmode\parskip=0pt}{}
+
+\newenvironment{collect}
+{
+	\leavevmode
+	\parindent=1em
+	\parskip=0pt
+	\noindent Orémus.\par
+}{}
+
+\newenvironment{optionbox}
+{
+	\switchcolumn[0]
+	\begin{mdframed}
+%	\begin{minipage}{0.8\linewidth}
+}{
+%	\end{minipage}
+	\end{mdframed}
+}
+
+\newcommand{\optionrule}{
+	\begin{center}
+	\rule{0.5\linewidth}{0.6pt}
+	\end{center}
+}
+
+\newenvironment{optionruled}
+{
+	\optionrule
+}
+{
+	\optionrule
+}
+
+% for use inside the collect environment
+\newcommand{\Amen}{\par\noindent \Rbar. Amen.}
+
+\begin{document}
+
+%\title{Compline of The Blessed Virgin Mary}
+%\date{ }
+
+\vspace*{2cm}
+
+\begin{center}
+	\textbf{\Huge Memorial Ritual}\\
+	\vspace{0.5cm}
+	{\LARGE Knights of St. John}\\
+	\vspace{0.5cm}
+	{\large St. Thomas the Apostle Commandery 973}
+\end{center}
+
+\vspace*{1cm}
+%\maketitle
+
+%\begin{figure}[h!]
+	%\centering
+%\end{figure}
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{KSJI_Logo}
+\end{center}
+
+\hspace{0pt}
+\vfill
+
+\pagebreak
+
+\section*{Invitatory}
+
+\textit{\color{red}All Knights present gather before the sanctuary in the first few rows of pews, or if not possible, before an open side altar. The Officiant, who should be the highest ranking officer present, stands in front of the rows of Knights on the Gospel side. The Cantor or Lector, ideally the second-highest ranking officer present, stands opposite the Officiant on the Epistle side.}
+
+\begin{latinenglishequalsection}
+
+\latinenglish{
+	Fratres, ...
+}{
+	Brothers, we are gathered here in order that we may honor our dead by means of the offering of intercessions, that they may gain relief from the fires of Purgatory, and thereby conveyed to the bosom of Our Lord and Saviour Jesus Christ, where, if it be according to the good pleasure and mercy of The Father, they may enjoy eternal beatitude.
+}
+
+\end{latinenglishequalsection}
+
+\textit{\color{red}The Cantor sings the antiphon up to the asterisk, after which the choir joins in until its completion.}
+
+\gresetinitiallines{1}
+\gregorioscore{antiphon_ne_reminiscaris}
+
+\textit{Remember not, O Lord, our offences, neither those of our parents, and take not revenge of our sins.}
+
+\section*{Psalm 50}
+
+\textit{\color{red}The Cantor sings the intonation up to the asterisk, after which all sit, and his side completes the remainder of the Psalm. The remaining verses are sung, alternating from each side of the choir.}
+
+\gresetinitiallines{1}
+\gregorioscore{intonation_psalm_50}
+
+\begin{latinenglishsection}
+\latinenglish{
+	2. Et secúndum multitúdinem miseratió\textit{num} \textit{tu}\textbf{á}rum,~* dele ini\textit{qui}\textit{tá}\textit{tem} \textbf{me}am.
+
+	3. Amplius lava me ab iniqui\textit{tá}\textit{te} \textbf{me}a:~* et a peccá\textit{to} \textit{me}\textit{o} \textbf{mun}da me.
+	
+	4. Quóniam iniquitátem meam e\textit{go} \textit{co}\textbf{gnós}co:~* et peccátum meum con\textit{tra} \textit{me} \textit{est} \textbf{sem}per.
+	
+	5. Tibi soli peccávi, et malum co\textit{ram} \textit{te} \textbf{fe}ci:~* ut justificéris in sermónibus tuis, et vincas \textit{cum} \textit{ju}\textit{di}\textbf{cá}ris.
+	
+	6. Ecce enim in iniquitáti\textit{bus} \textit{con}\textbf{cép}tus sum:~* et in peccátis concépit \textit{me} \textit{ma}\textit{ter} \textbf{me}a.
+	
+	7. Ecce enim veritátem \textit{di}\textit{le}\textbf{xís}ti:~* incérta et occúlta sapiéntiæ tuæ mani\textit{fes}\textit{tás}\textit{ti} \textbf{mi}hi.
+	
+	8. Aspérges me hyssópo, \textit{et} \textit{mun}\textbf{dá}bor:~* lavábis me, et super ni\textit{vem} \textit{de}\textit{al}\textbf{bá}bor.
+	
+	9. Audítui meo dabis gáudium \textit{et} \textit{læ}\textbf{tí}tiam:~* et exsultábunt ossa\\ \textit{hu}\textit{mi}\textit{li}\textbf{á}ta.
+	
+	10. Avérte fáciem tuam a pec\textit{cá}\textit{tis} \textbf{me}is:~* et omnes iniquitá\textit{tes} \textit{me}\textit{as} \textbf{de}le.
+	
+	11. Cor mundum crea \textit{in} \textit{me}, \textbf{De}us:~* et spíritum rectum ínnova in vi\textit{scé}\textit{ri}\textit{bus} \textbf{me}is.
+	
+	12. Ne projícias me a fá\textit{ci}\textit{e} \textbf{tu}a:~* et spíritum sanctum tuum ne \textit{áu}\textit{fe}\textit{ras} \textbf{a} me.
+	
+	13. Redde mihi lætítiam salu\textit{tá}\textit{ris} \textbf{tu}i:~* et spíritu princi\textit{pá}\textit{li} \textit{con}\textbf{fír}ma me.
+	
+	14. Docébo iníquos \textit{vi}\textit{as} \textbf{tu}as:~* et ímpii ad \textit{te} \textit{con}\textit{ver}\textbf{tén}tur.
+	
+	15. Líbera me de sanguínibus, Deus, Deus sa\textit{lú}\textit{tis} \textbf{me}æ:~* et exsultábit lingua mea jus\textit{tí}\textit{ti}\textit{am} \textbf{tu}am.
+	
+	16. Dómine, lábia me\textit{a} \textit{a}\textbf{pé}ries:~* et os meum annuntiá\textit{bit} \textit{lau}\textit{dem} \textbf{tu}am.
+	
+	17. Quóniam si voluísses sacrifícium, de\textit{dís}\textit{sem} \textbf{ú}tique:~* holocáustis \textit{non} \textit{de}\textit{lec}\textbf{tá}beris.
+	
+	18. Sacrifícium Deo spíritus con\textit{tri}\textit{bu}\textbf{lá}tus:~* cor contrítum et humiliátum, De\textit{us}, \textit{non} \textit{de}\textbf{spí}cies.
+	
+	19. Benígne fac, Dómine, in bona voluntáte \textit{tu}\textit{a} \textbf{Si}on:~* ut ædificéntur \textit{mu}\textit{ri} \textit{Je}\textbf{rú}salem.
+	
+	20. Tunc acceptábis sacrifícium justítiæ, oblatiónes, et \textit{ho}\textit{lo}\textbf{cáus}ta:~* tunc impónent super altá\textit{re} \textit{tu}\textit{um} \textbf{ví}tulos.
+	
+	21. Requiem æternam dona \textit{eis}, \textbf{Do}mine~* Et lux perpetua \textit{luceat} \textbf{e}is.
+}{	
+	1. Have mercy on me, O God, according to thy great mercy. 
+	
+	2. And according to the multitude of thy tender mercies blot out my iniquity.
+
+	3. Wash me yet more from my iniquity, and cleanse me from my sin.
+	
+	4. For I know my iniquity, and my sin is always before me.
+
+	5. To thee only have I sinned, and have done evil before thee: that thou mayst be justified in thy words and mayst overcome when thou art judged.
+	
+	6. For behold I was conceived in iniquities; and in sins did my mother conceive me.
+	
+	7. For behold thou hast loved truth: the uncertain and hidden things of thy wisdom thou hast made manifest to me.
+	
+	8. Thou shalt sprinkle me with hyssop, and I shall be cleansed: thou shalt wash me, and I shall be made whiter than snow.
+
+	9. To my hearing thou shalt give joy and gladness: and the bones that have been humbled shall rejoice.
+	
+	10. Turn away thy face from my sins, and blot out all my iniquities.
+	
+	11. Create a clean heart in me, O God: and renew a right spirit within my bowels.
+	
+	12. Cast me not away from thy face; and take not thy holy spirit from me.
+	
+	13. Restore unto me the joy of thy salvation, and strengthen me with a perfect spirit.
+	
+	14. I will teach the unjust thy ways: and the wicked shall be converted to thee.
+	
+	15. Deliver me from blood, O God, thou God of my salvation: and my tongue shall extol thy justice.
+	
+	16. O Lord, thou wilt open my lips: and my mouth shall declare thy praise.
+	
+	17. For if thou hadst desired sacrifice, I would indeed have given it: with burnt offerings thou wilt not be delighted.
+	
+	18. A sacrifice to God is an afflicted spirit: a contrite and humbled heart, O God, thou wilt not despise.
+	
+	19. Deal favourably, O Lord, in thy good will with Sion; that the walls of Jerusalem may be built up.
+	
+	20. Then shalt thou accept the sacrifice of justice, oblations and whole burnt offerings: then shall they lay calves upon thy altar.
+	
+	21. Eternal rest, grant unto them O Lord~* and let perpetual light shine upon them.
+}
+\end{latinenglishsection}
+
+\gresetinitiallines{1}
+\gregorioscore{antiphon_ne_reminiscaris}
+
+\textit{Remember not, O Lord, our offences, neither those of our parents, and take not revenge of our sins.}
+
+\textit{\color{red}All remain seated. As before, the Cantor sings the antiphon up to the asterisk, after which the choir joins in until its completion.}
+
+\gresetinitiallines{1}
+\gregorioscore{antiphon_tibi_soli_peccavi}
+
+\textit{Only against Thee, O Lord, have I sinned. Have mercy on me.}
+
+\section*{Psalm 129}
+
+\textit{\color{red}The Cantor sings the intonation up to the asterisk, after which all sit, and his side completes the remainder of the Psalm. The remaining verses are sung, alternating from each side of the choir.}
+
+\gresetinitiallines{1}
+\gregorioscore{intonation_psalm_129}
+
+\begin{latinenglishsection}
+\latinenglish{
+	2. Fiant aures tuæ inten\textbf{dén}tes:~* in vocem deprecati\textit{ó}\textit{nis} \textbf{me}æ.
+
+	3. Si iniquitátes observáveris, \textbf{Dó}mine:~* Dómine, quis \textit{sus}\textit{ti}\textbf{né}bit?
+	
+	4. Quia apud te propitiáti\textbf{o} est:~* et propter legem tuam sustínu\textit{i} \textit{te}, \textbf{Dó}mine.
+	
+	5. Sustínuit ánima mea in verbo \textbf{e}jus:~* sperávit ánima me\textit{a} \textit{in} \textbf{Dó}mino.
+	
+	6. A custódia matutína usque ad \textbf{noc}tem:~* speret Isra\textit{ël} \textit{in} \textbf{Dó}mino.
+	
+	7. Quia apud Dóminum miseri\textbf{cór}dia:~* et copiósa apud e\textit{um} \textit{red}\textbf{émp}tio.
+	
+	8. Et ipse rédimet \textbf{Is}raël:~* ex ómnibus iniquitá\textit{ti}\textit{bus} \textbf{e}jus.
+	
+	9. Requiem æternam dona eis, \textbf{Do}mine~* Et lux perpetua lu\textit{ceat} \textbf{e}is.
+}{
+	1. Out of the depths I have cried to thee, O Lord:
+
+	2. Lord, hear my voice. Let thy ears be attentive to the voice of my supplication.
+	
+	3. If thou, O Lord, wilt mark iniquities: Lord, who shall stand it.
+	
+	4. For with thee there is merciful forgiveness: and by reason of thy law, I have waited for thee, O Lord. 
+	
+	5. My soul hath relied on his word: My soul hath hoped in the Lord.
+	
+	6. From the morning watch even until night, let Israel hope in the Lord.
+	
+	7. Because with the Lord there is mercy: and with him plentiful redemption.
+	
+	8. And he shall redeem Israel from all his iniquities.
+	
+	9. Eternal rest, grant unto them O Lord~* and let perpetual light shine upon them.
+}
+\end{latinenglishsection}
+
+\gresetinitiallines{1}
+\gregorioscore{antiphon_tibi_soli_peccavi}
+
+\textit{Only against Thee, O Lord, have I sinned. Have mercy on me.}
+
+\textit{\color{red}All rise. The Officiant leads the following prayers:}
+
+\begin{latinenglishequalsection}
+
+\latinenglish{
+	{\color{red}\Vbar.} Domine, exaudi orationem meam. 
+	
+	{\color{red}\Rbar.} Et clamor meus ad te veniat.
+	
+	{\color{red}\Vbar.} Oremus.
+	
+	Dómine Iesu Christe, Rex glóriæ, líbera ánimas ómnium fidélium defunctórum de p\oe nis inférni et de profúnda lacu; {\color{red}*} líbera eas de ore leónis, ne absórbeat eas tártarus, ne cad\textbf{ant} \textit{in ob}\textbf{scú}rum; sed sígnifer sanctus Míchaël repræséntet eas in lucem sanctam, {\color{red}*} quam olim Abrahæ promisísti et sémini eius.
+	
+	{\color{red}\Rbar.} Amen.
+	
+	{\color{red}\Vbar.} Pie Iesu Dómine. 
+	
+	{\color{red}\Rbar.} Dona eis réquiem sempitérnam.
+	
+	{\color{red}\Vbar.} Kyrie, eleison.
+	
+	{\color{red}\Rbar.} Christe, eleison.
+	
+	{\color{red}\Vbar.} Lord, have mercy. Pater noster. {\color{red}\textit{(secreto)}}
+	
+	{\color{red}\Vbar.} Et ne nos inducas in tentationem.
+	
+	{\color{red}\Rbar.} Sed libera nos a malo.
+	
+	{\color{red}\Vbar.} A porta inferi.
+	
+	{\color{red}\Rbar.} Erue Domine anima eorum.
+	
+	{\color{red}\Vbar.} Domine, exaudi orationem meam. 
+	
+	{\color{red}\Rbar.} Et clamor meus ad te veniat.
+	
+	{\color{red}\Vbar.} Oremus.
+	
+	Deus, véni\ae\ largítor et humán\ae\ sal\'{u}tis amátor: {\color{red}*} qu\ae sumus clem\'{e}ntiam tuam; ut nostrae congregatiónis frartres, propínquos, et benefactóres, qui ex hoc s\'{\ae}cu\textbf{lo} \textit{transi}\textbf{\'{e}}runt, be\'{a}ta María semper Virgine intercedénte cum ómnibus sanctis tuis, ad perp\'{e}tu\ae beatit\'{u}dinis cons\'{o}rtium perven\'{i}re conc\'{e}das. {\color{red}*} Per Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia s\'{\ae}cula sæculórum.
+	
+	{\color{red}\Rbar.} Amen.
+	
+	{\color{red}\Vbar.} Domine, exaudi orationem meam. 
+	
+	{\color{red}\Rbar.} Et clamor meus ad te veniat.
+	
+	{\color{red}\Vbar.} Benedic\'{a}mus Domino.
+	
+	{\color{red}\Rbar.} Deo gr\'{a}tias.
+}{
+	{\color{red}\Vbar.} O Lord, hear my prayer. 
+	
+	{\color{red}\Vbar.} And let my cry come unto Thee. 
+	
+	{\color{red}\Vbar.} Let us pray.
+
+	O Lord Jesus Christ, King of glory, deliver the souls of all the faithful departed from the pains of hell and from the bottomless pit; deliver them out of the lion's mouth, lest hell should swallow them up, lest they fall into the outer darkness; but let Thy standard-bearer, Saint Michael, bring them back into The holy light, which Thou didst promise of old Abraham and to his seed.
+	
+	{\color{red}\Rbar.} Amen.
+	
+	{\color{red}\Vbar.} Merciful Lord Jesus.
+	
+	{\color{red}\Vbar.} Grant them everlasting rest.
+	
+	{\color{red}\Vbar.} Lord, have mercy.
+	
+	{\color{red}\Rbar.} Christ, have mercy.
+	
+	{\color{red}\Vbar.} Lord, have mercy. {\color{red}\textit{(the remaining said silently)}}
+	
+	{\color{red}\Vbar.} At lead us not into temptation.
+	
+	{\color{red}\Rbar.} But deliver us from evil.
+	
+	{\color{red}\Vbar.} From the gate of hell.
+	
+	{\color{red}\Rbar.} Deliver their souls, O Lord.
+	
+	{\color{red}\Vbar.} O Lord, hear my prayer. 
+	
+	{\color{red}\Vbar.} And let my cry come unto Thee. 
+	
+	{\color{red}\Vbar.} Let us pray.
+
+	O God, the giver of pardon and lover of human salvation, we beseech Thy clemency to grant that the brethren, relations, and benefactors of our congregation who are departed from this world may, by the intercession of the blessed Mary, ever virgin, and of all Thy saints, attain to the fellowship of eternal beatitude. Through Our Lord Jesus Christ Thy Son, who liveth and reigneth with Thee in the unity of the Holy Ghost, God, world without end.
+	
+	{\color{red}\Rbar.} Amen.
+	
+	{\color{red}\Vbar.} O Lord, hear my prayer. 
+	
+	{\color{red}\Vbar.} And let my cry come unto Thee. 
+}
+
+\end{latinenglishequalsection}
+
+{\color{red}\textit{The Officiant leads the following in a low recto tono:}}
+
+\begin{latinenglishequalsection}
+
+\latinenglish{
+	{\color{red}\Vbar.} Fid\'{e}lium \'{a}nim\ae\ per miseric\'{o}rdiam Dei requi\'{e}scant in pace.
+		
+	{\color{red}\Rbar.} Amen.
+}{
+	{\color{red}\Vbar.} May the souls of the faithful departed, through the mercy of God, rest in peace.
+		
+	{\color{red}\Rbar.} Amen.
+}
+
+\end{latinenglishequalsection}
+
+\end{document}
