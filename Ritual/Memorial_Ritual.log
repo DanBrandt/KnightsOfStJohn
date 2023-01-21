@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2021.11.17)  16 JAN 2023 23:07
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2021.11.17)  21 JAN 2023 13:55
  system commands enabled.
 **Memorial_Ritual.tex
 (./Memorial_Ritual.tex
@@ -873,11 +873,11 @@ LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 16.58891pt on input line 120.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 11.52008pt on input line 122.
-<KSJI_Logo.png, id=1, 208.78pt x 209.78375pt>
+<KSJI_Logo.png, id=1, 288.07625pt x 296.10625pt>
 File: KSJI_Logo.png Graphic file (type png)
 <use KSJI_Logo.png>
 Package luatex.def Info: KSJI_Logo.png  used on input line 133.
-(luatex.def)             Requested size: 281.85587pt x 283.25023pt.
+(luatex.def)             Requested size: 281.85587pt x 289.72127pt.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./KSJI_Logo.png>]
@@ -933,6 +933,15 @@ line 167
  (./intonation_psalm_50-6_0_0.gtex
 Inserting `gregoriotex.post_linebreak' at position 1 in `post_linebreak_filter'.
 Inserting `gregoriotex.disable_hyphenation' at position 1 in `hyphenate'.
+Overfull \hbox (8.45567pt too wide) detected at line 75
+|
+ []
+
+
+Overfull \hbox (8.45567pt too wide) detected at line 171
+|
+ []
+
 Removing  `gregoriotex.post_linebreak' from `post_linebreak_filter'.
 Removing  `gregoriotex.disable_hyphenation' from `hyphenate'.)
 Overfull \hbox (0.3551pt too wide) in paragraph at lines 252--252
@@ -1034,32 +1043,48 @@ Inserting `gregoriotex.post_linebreak' at position 1 in `post_linebreak_filter'.
 Inserting `gregoriotex.disable_hyphenation' at position 1 in `hyphenate'.
 Removing  `gregoriotex.post_linebreak' from `post_linebreak_filter'.
 Removing  `gregoriotex.disable_hyphenation' from `hyphenate'.)
-Overfull \hbox (3.66754pt too wide) in paragraph at lines 409--409
+Overfull \hbox (3.66754pt too wide) in paragraph at lines 405--405
 \T1/mdbch/m/it/10 dark-ness; but let Thy standard-bearer, Saint Michael, bring
  []
 
 [5]
-Overfull \hbox (1.72772pt too wide) in paragraph at lines 425--425
+Module gregoriotex Info: Looking in  on input line 412
+Module gregoriotex Info: Found requiescant_in_pace.gabc directly on input line 4
+12
+Module gregoriotex Info: Looking in  on input line 412
+Module gregoriotex Info: Found requiescant_in_pace-6_0_0.gtex directly on input 
+line 412
+ (./requiescant_in_pace-6_0_0.gtex
+Inserting `gregoriotex.post_linebreak' at position 1 in `post_linebreak_filter'.
+Inserting `gregoriotex.disable_hyphenation' at position 1 in `hyphenate'.
+Removing  `gregoriotex.post_linebreak' from `post_linebreak_filter'.
+Removing  `gregoriotex.disable_hyphenation' from `hyphenate'.)
+Overfull \hbox (1.72772pt too wide) in paragraph at lines 427--427
 [][][]\T1/mdbch/m/it/10 V. May the souls of the faith-ful de-parted, through th
 e mercy
  []
 
-[6] (./Memorial_Ritual.aux)
+<Holy_Souls.jpg, id=26, 262.0992pt x 124.3044pt>
+File: Holy_Souls.jpg Graphic file (type jpg)
+<use Holy_Souls.jpg>
+Package luatex.def Info: Holy_Souls.jpg  used on input line 432.
+(luatex.def)             Requested size: 469.75502pt x 222.79176pt.
+[6<./Holy_Souls.jpg>] (./Memorial_Ritual.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 )
 
 Here is how much of LuaTeX's memory you used:
- 27773 strings out of 481365
+ 27796 strings out of 481365
  100000,794899 words of node,token memory allocated
- 3568 words of node memory still in use:
-   4 hlist, 3 vlist, 1 rule, 102 glue, 44 kern, 3 glyph, 742 attribute, 146 glue
-_spec, 127 attribute_list, 1 write, 1 user_defined nodes
-   avail lists: 1:1,2:8600,3:894,4:8,5:1223,6:129,7:5095,8:2,9:1495,10:5,11:222
- 44326 multiletter control sequences out of 65536+600000
+ 3400 words of node memory still in use:
+   4 hlist, 3 vlist, 1 rule, 94 glue, 44 kern, 3 glyph, 694 attribute, 146 glue_
+spec, 119 attribute_list, 1 write, 1 user_defined nodes
+   avail lists: 1:1,2:8656,3:894,4:8,5:1223,6:129,7:5105,8:2,9:1495,10:5,11:222
+ 44334 multiletter control sequences out of 65536+600000
  79 fonts using 9413195 bytes
- 43i,5n,70p,1203b,1112s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 43i,5n,70p,1203b,1114s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/share/texmf/fonts/truetype/public/gregoriotex/greciliae-hollow.ttf><
 /usr/local/share/texmf/fonts/truetype/public/gregoriotex/greciliae-hole.ttf></us
 r/local/share/texmf/fonts/truetype/public/gregoriotex/greextra.ttf></usr/local/s
@@ -1068,7 +1093,7 @@ exmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/share/texlive/texmf-dist/fonts/
 type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bit
 strea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/cha
 rter/bchri8a.pfb>
-Output written on Memorial_Ritual.pdf (6 pages, 114618 bytes).
+Output written on Memorial_Ritual.pdf (6 pages, 207865 bytes).
 
 PDF statistics: 66 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
